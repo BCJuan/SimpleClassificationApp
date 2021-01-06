@@ -38,11 +38,7 @@ https://stackoverflow.com/questions/56772967/converting-imageproxy-to-bitmap
 public class MainActivity extends AppCompatActivity {
 
     private int REQUEST_CODE_PERMISSIONS = 1001;
-    private final String [] REQUIRED_PERMISSIONS = new String []{
-            Manifest.permission.CAMERA,
-            Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            Manifest.permission.READ_EXTERNAL_STORAGE
-    };
+    private final String [] REQUIRED_PERMISSIONS = new String []{Manifest.permission.CAMERA};
 
     PreviewView mPreviewView;
     TextView tvResults;

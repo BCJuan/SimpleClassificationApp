@@ -110,9 +110,7 @@ public class MainActivity extends AppCompatActivity {
                 });
         Camera camera = cameraProvider.bindToLifecycle(this, cameraSelector,
                 preview, imageAnalysis, imageCapture);
-
     }
-
 
     private boolean allPermissionsGranted(){
         for(String permission: REQUIRED_PERMISSIONS){
@@ -122,17 +120,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         return true;
-    }
-
-    public String getOutputDirectory(){
-        String app_folder_path = "";
-        app_folder_path = getExternalFilesDir(Environment.DIRECTORY_PICTURES).toString() + "/images";
-        File dir = new File(app_folder_path);
-        if (!dir.exists() && !dir.mkdirs()) {
-
-        }
-
-        return app_folder_path;
     }
 
     @Override
